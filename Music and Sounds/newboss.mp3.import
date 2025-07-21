@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://je4h5gecy6hw"
+path="res://.godot/imported/newboss.mp3-caaa74ff65028fc5d62cbbcf9479a9da.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/newboss.mp3"
+dest_files=["res://.godot/imported/newboss.mp3-caaa74ff65028fc5d62cbbcf9479a9da.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

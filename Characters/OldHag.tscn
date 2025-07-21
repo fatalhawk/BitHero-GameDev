@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://buurryjw0k1ml"]
+
+[ext_resource type="Texture2D" uid="uid://c3rtsm5417mxp" path="res://Characters/scientist.png" id="1_1wu55"]
+[ext_resource type="Script" uid="uid://btahv5uich4yu" path="res://Characters/old_hag.gd" id="1_jptbr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6ldss"]
+height = 32.0
+
+[sub_resource type="Animation" id="Animation_1sodm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Scientist:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_4fmj6"]
+resource_name = "default"
+length = 1.5
+loop_mode = 1
+step = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Scientist:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c472b"]
+_data = {
+&"RESET": SubResource("Animation_1sodm"),
+&"default": SubResource("Animation_4fmj6")
+}
+
+[node name="OldHag" type="CharacterBody2D"]
+script = ExtResource("1_jptbr")
+
+[node name="Scientist" type="Sprite2D" parent="."]
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("1_1wu55")
+hframes = 13
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_6ldss")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+&"": SubResource("AnimationLibrary_c472b")
+}
+autoplay = "default"

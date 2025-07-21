@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://6ey5fntmjp54"]
+
+[ext_resource type="Script" uid="uid://dowfwxn2y8cum" path="res://scenes/start.gd" id="1_bodal"]
+[ext_resource type="Texture2D" uid="uid://b2n3sl3oc4a1m" path="res://World/startBG.png" id="1_jaeev"]
+[ext_resource type="Texture2D" uid="uid://dpn2gp81vr2ga" path="res://UI/title.png" id="2_u80x2"]
+[ext_resource type="AudioStream" uid="uid://bb44twsjbc2t8" path="res://Music and Sounds/normal_bg.mp3" id="4_kdmts"]
+
+[node name="Start" type="Node2D"]
+script = ExtResource("1_bodal")
+
+[node name="StartBg" type="Sprite2D" parent="."]
+position = Vector2(159.875, 90)
+scale = Vector2(0.166797, 0.15)
+texture = ExtResource("1_jaeev")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(160, 88)
+scale = Vector2(0.243164, 0.0887207)
+texture = ExtResource("2_u80x2")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 56.0
+offset_top = 112.0
+offset_right = 319.0
+offset_bottom = 135.0
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.773933, 0.188322, 0.437027, 1)
+text = "PRSSS ENTER TO START THE GAME"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_kdmts")
+autoplay = true
+parameters/looping = true

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8ibiqvuycl3f"]
+
+[ext_resource type="Script" uid="uid://b7xfaaksxqus0" path="res://Enemies/wander.gd" id="1_e4tyc"]
+
+[node name="Wander" type="Node2D"]
+script = ExtResource("1_e4tyc")
+
+[node name="Timer" type="Timer" parent="."]

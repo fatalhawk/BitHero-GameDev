@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdy77572ctfke"]
+
+[ext_resource type="Script" uid="uid://kn6m2k0hjqau" path="res://World/stats.gd" id="1_tgptp"]
+
+[node name="Stats" type="Node2D"]
+script = ExtResource("1_tgptp")
