@@ -370,7 +370,7 @@ sources/1 = SubResource("TileSetScenesCollectionSource_kmdoq")
 pattern_0 = SubResource("TileMapPattern_hq1bd")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pxffc"]
-size = Vector2(32, 192)
+size = Vector2(32, 128)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kmdoq"]
 size = Vector2(20, 144)
@@ -437,7 +437,7 @@ metadata/_edit_use_anchors_ = true
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HelpDialog"]
-position = Vector2(208, 56)
+position = Vector2(208, 88)
 shape = SubResource("RectangleShape2D_pxffc")
 
 [node name="ExitLeft" type="Area2D" parent="."]

@@ -19,7 +19,7 @@ config/windows_native_icon="res://title.ico"
 [autoload]
 
 PlayerStats="*res://Player/player_stats.tscn"
-Transition="*res://transition.tscn"
+Transition="*res://UI/transition.tscn"
 DialogueManager="*res://UI/dialogue_manager.gd"
 
 [display]
@@ -114,6 +114,5 @@ move_down={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-textures/vram_compression/import_etc2_astc=true
 textures/lossless_compression/force_png=true
 2d/snap/snap_2d_vertices_to_pixel=true

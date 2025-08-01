@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bjeaa553p1j4j"]
 
-[ext_resource type="Script" uid="uid://j13h33j3wfbs" path="res://player_recognition.gd" id="1_dca6s"]
+[ext_resource type="Script" uid="uid://j13h33j3wfbs" path="res://Enemies/player_recognition.gd" id="1_dca6s"]
 
 [node name="PlayerRecognition" type="Area2D"]
 collision_layer = 0
